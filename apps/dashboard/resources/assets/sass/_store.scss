@@ -1,0 +1,14 @@
+.store {
+    position: relative;
+
+    &.active {
+        &::before {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-family: Font Awesome\ 5 Free;
+            content: "\f058";
+            color: theme-color('success');
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.stat-box {
+    &__title {
+        margin-bottom: 8px;
+        font-size: 16px;
+        font-weight: normal;
+        color: #7171a6;
+    }
+
+    h2 {
+        font-size: 24px;
+
+        small {
+            font-size: 14px;
+            color: #b8b8d9;
+        }
+    }
+
+    &__item-percentage {
+        font-size: 18px;
+        font-weight: 700;
+
+        &.up {
+            color: #12c457;
+        }
+
+        &.down {
+            color: #e84c85;
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+
+        &.up {
+            background-color: rgba(18,196,87,.1);
+            color: #12c457;
+        }
+
+        &.down {
+            background-color: rgba(232,76,133,.1);
+            color: #e84c85;
+        }
+    }
+}
+
+.stat-box--refund {
+    .stat-box {
+        &__up {
+            color: theme-color('danger');
+        }
+
+        &__down {
+            color: theme-color('success');
+        }
+    }
+}

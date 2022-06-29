@@ -1,0 +1,203 @@
+.flatpickr-wrap {
+    height: 35px;
+    position: relative;
+    background-color: $white;
+    border: 1px solid #e1eaee;
+    border-radius: 4.3px;
+    font-size: 13px;
+
+    .form-control {
+        display: inline-block;
+        width: auto;
+        height: 33px;
+        width: 307.875px;
+        border: 0;
+        background-color: inherit;
+        box-shadow: none;
+        color: rgba(30, 48, 86, 0.6);
+        font-size: 13px;
+    }
+
+    .dropdown {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-block;
+    }
+
+    .dropdown-menu {
+        padding: 1rem 0;
+        width: 307.875px;
+        font-size: 12px;
+        box-shadow: 0 0 17px 0 rgba(30, 48, 86, 0.05);
+
+        .label {
+            margin-right: .5rem;
+            color: $black;
+        }
+
+        .date,
+        .sep {
+            color: $gray-400;
+        }
+
+        &::after {
+            left: auto;
+            right: 7px;
+        }
+
+        &:before {
+            left: auto;
+            right: 8px;
+        }
+    }
+
+    .dropdown-item {
+        padding: .35rem 1.5rem;
+    }
+
+    .btn {
+        padding: 9px 12px;
+        width: 43px;
+        height: 33px;
+        box-shadow: none;
+        border-left: 1px solid #e1eaee;
+        border-radius: 0;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .dropdown-toggle-icon {
+        display: block;
+        margin-bottom: 3px;
+        width: 75%;
+        height: 2px;
+        opacity: 0.4;
+        background-color: #1e3056;
+        border-radius: $border-radius;
+
+        &:nth-child(2) {
+            width: 100%;
+        }
+
+        &:nth-child(3) {
+            width: 50%;
+        }
+    }
+}
+
+// .flatpickr-calendar {
+//     .flatpickr-months {
+//         padding: .75rem;
+//     }
+//
+//     .flatpickr-day.selected {
+//         border-radius: 3px !important;
+//         background-color: #fff;
+//         color: blue;
+//     }
+//
+//     .flatpickr-day.inRange {
+//     }
+//
+//     .flatpickr-day.endRange,
+//     .flatpickr-day.startRange {
+//         border-radius: 3px !important;
+//     }
+//
+//     .flatpickr-current-month {
+//         position: relative;
+//         width: 100%;
+//         left: 0;
+//         padding: 0 !important;
+//     }
+//
+//     .cur-month {
+//         position: absolute;
+//         left: 1rem;
+//         font-size: 13px;
+//         font-weight: normal !important;
+//         color: rgba(30, 48, 86, 0.6) !important;
+//         border: 1px solid #e1eaee;
+//         border-radius: 3px;
+//         padding: .282rem .5rem !important;
+//         width: 100px !important;
+//     }
+//
+//     .numInputWrapper {
+//         position: absolute;
+//         right: 0;
+//         border: 1px solid #e1eaee;
+//         border-radius: 3px;
+//         padding: .05rem .5rem;
+//         height: 24px;
+//         width: 7rem !important;
+//     }
+//
+//     .flatpickr-prev-month,
+//     .flatpickr-next-month,
+//     .arrowUp,
+//     .arrowDown {
+//         border: 1px solid #e1eaee;
+//         border-radius: 3px;
+//         opacity: 1 !important;
+//         width: 24px !important;
+//         height: 24px !important;
+//         line-height: 24px !important;
+//         padding: 0 !important;
+//         background-color: $white;
+//         z-index: 2;
+//
+//         &::after {
+//             font-family: "dripicons-v2";
+//             content: "T";
+//             border: 0 !important;
+//         }
+//
+//         svg {
+//             display: none;
+//         }
+//     }
+//
+//     .flatpickr-prev-month {
+//         left: .75rem !important;
+//         top: .75rem !important;
+//     }
+//
+//     .arrowUp,
+//     .arrowDown {
+//         text-align: center;
+//         font-size: 13px;
+//         top: -1px !important;
+//
+//         &::after {
+//             position: relative !important;
+//             top: 0 !important;
+//             display: inline-block !important;
+//         }
+//     }
+//
+//     .arrowUp {
+//         border-bottom: 0;
+//         right: -1px;
+//     }
+//
+//     .arrowDown {
+//         left: -1px;
+//     }
+//
+//     .flatpickr-next-month {
+//         right: 155px !important;
+//         top: .75rem !important;
+//     }
+//
+//     .cur-year {
+//         padding: 0 !important;
+//         font-size: 13px !important;
+//         font-weight: normal !important;
+//         color: rgba(30, 48, 86, 0.6) !important;
+//         text-align: center;
+//     }
+// }

@@ -1,0 +1,55 @@
+.widget-orders {
+    .table {
+        margin-bottom: 0;
+    }
+}
+
+.order {
+    &__status {
+        margin-right: 1rem;
+        color: theme-color("success");
+    }
+
+    &__id {
+        display: block;
+    }
+
+    &__date {
+        font-size: $font-size-sm;
+        color: $gray-400;
+    }
+}
+
+.customer-bio {
+    &__avatar {
+        margin-right: 1rem;
+        width: 3rem;
+        border-radius: 100%;
+    }
+
+    &__name {
+        display: block;
+    }
+
+    &__location {
+        font-size: $font-size-sm;
+        color: $gray-400;
+    }
+}
+
+.order-item {
+    &__media {
+
+    }
+
+    &__volume {
+
+    }
+
+    &__total {
+
+    }
+}
+
+.order-calculate {
+}

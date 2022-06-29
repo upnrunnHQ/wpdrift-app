@@ -1,0 +1,193 @@
+.offcanvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 20rem;
+    left: -20rem;
+    transition: transform .2s ease-in-out;
+    z-index: 999;
+    background-color: $white;
+    box-shadow: 5px 0 10px 0 rgba($black, .1);
+    z-index: 1031;
+
+    &.display {
+        transform: translateX(20rem);
+    }
+
+    &__body {
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        position: relative;
+        height: 85%;
+        overflow: auto;
+    }
+
+    .dropdown-menu {
+        margin-top: .75rem;
+        width: 100%;
+    }
+
+    .dropdown-toggle,
+    .dropdown-item {
+        &__title {
+            display: block;
+        }
+
+        &__description {
+            font-size: $font-size-sm;
+            font-weight: normal;
+            color: rgba(30, 48, 86, 0.75);
+        }
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1.5rem;
+        border-radius: 0;
+        border-bottom: 1px solid #e1eaee;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .dropdown-toggle {
+        padding: 1.5rem 1rem;
+        background-color: #f7f9fc;
+        border: 1px solid #e1eaee;
+        box-shadow: none;
+        text-align: left;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            margin-top: -11px;
+        }
+    }
+
+    &__toggler {
+        position: absolute;
+        bottom: 2rem;
+        left: 1rem;
+
+        .icon {
+            position: relative;
+            top: 2px;
+        }
+
+        &--primary {
+            left: 15px;
+            bottom: 32px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $gray-100;
+            color: #2a81fb;
+        }
+
+        &--secondary {
+        }
+    }
+
+    .sites {
+        margin-bottom: 2rem;
+    }
+
+    .site {
+        display: block;
+        margin-bottom: .5rem;
+        padding: 1.5rem 2rem;
+        border-radius: $border-radius;
+        text-align: center;
+        background-color: #f7f9fc;
+        border: 1px solid #e1eaee;
+
+        &:hover {
+            background-color: $gray-100;
+        }
+
+        &.active {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: .25rem;
+                right: .5rem;
+                content: "\f058";
+                font-family: Font Awesome\ 5 Free;
+                font-weight: 900;
+                font-size: $font-size-sm;
+            }
+        }
+
+        &__icon {
+            display: inline-block;
+            margin-bottom: .5rem;
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            border-radius: 100%;
+            background-color: $white;
+            border: 1px solid #e1eaee;
+
+            img {
+                max-width: 1.5rem;
+            }
+        }
+
+        &__title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: $font-size-sm;
+        }
+    }
+
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+
+        > div {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .btn {
+        font-weight: normal;
+    }
+
+    .vue-js-switch {
+        .v-switch-core {
+            background-color: #e1eaee !important;
+            border: 1px solid #2a81fb;
+        }
+
+        .v-switch-button {
+            margin-top: -1px;
+            background-color: #2a81fb !important;
+        }
+    }
+}
+
+.option {
+    padding-left: 1.15rem !important;
+    padding-right: 1.15rem !important;
+
+    &--current-site {
+        .dropdown {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &--enable-edd {
+        .btn {
+            padding: .125rem .75rem;
+            font-size: $font-size-sm;
+            box-shadow: none;
+        }
+    }
+}

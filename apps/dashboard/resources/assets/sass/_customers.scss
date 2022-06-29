@@ -1,0 +1,130 @@
+.customers {
+	background-color: $white;
+	box-shadow: 0 1px 15px 1px rgba(69,65,78,.08);
+
+	.wrap {
+		position: relative;
+		min-height: 10rem;
+    	background-color: $white;
+
+		.loader {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+		}
+	}
+
+	&__error {
+		text-align: center;
+
+		&--icon {
+			margin-bottom: 1rem;
+			font-size: $font-size-base * 2.5;
+		}
+
+		&--message {
+			display: block;
+		}
+
+		&--help {
+			font-size: $font-size-sm;
+		}
+	}
+
+	.card-body {
+		padding: 2rem;
+	}
+
+	.tools {
+		margin-bottom: 2rem;
+	}
+
+	.table {
+		overflow: hidden;
+		border-radius: $border-radius;
+		background-color: $white;
+
+		thead {
+			th {
+				background-color: $gray-100;
+			}
+		}
+	}
+
+	.form-control {
+		border-color: $gray-100;
+		background-color: $gray-100;
+		box-shadow: none;
+	}
+
+	nav ul {
+		@extend .pagination;
+		justify-content: flex-end;
+
+		li {
+			@extend .page-item;
+			margin-right: .5rem;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		a {
+			@extend .page-link;
+			order: 0;
+			background-color: $gray-100;
+			border-radius: $border-radius;
+			border: 0;
+		}
+	}
+}
+
+.customer-details {
+	@extend .media;
+
+	.avatar {
+		margin-right: 1rem;
+		max-width: 3rem;
+		border-radius: 50%;
+	}
+
+	.details {
+		@extend .media-body;
+	}
+
+	.joined {
+		display: block;
+		font-size: $font-size-sm;
+		@extend .text-muted;
+	}
+
+	.email,
+	.phone,
+	.city,
+	.country,
+	.spend,
+	.items {
+		display: block;
+	}
+}
+
+.pagi-ul li {
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+	border: 1px #000 solid;
+	padding: 0 10px;
+	background-color: #C1C682;
+
+	&.pagi-disabled {
+		background-color: #F3EEEA !important;
+		cursor: not-allowed;
+		opacity: 0.3;
+	}
+
+	&.pagi-active {
+		background-color: #E37722 !important;
+		cursor: cell;
+	}
+}

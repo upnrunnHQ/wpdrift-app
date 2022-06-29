@@ -1,0 +1,62 @@
+{
+    "name": "app.wpdrift.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "webpack.mix.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/upnrunn/app.wpdrift.io.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/upnrunn/app.wpdrift.io/issues"
+    },
+    "homepage": "https://gitlab.com/upnrunn/app.wpdrift.io#readme",
+    "devDependencies": {
+        "laravel-mix": "^4.0.16",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.22.3",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "bootstrap": "^4.3.1",
+        "chart.js": "^2.8.0",
+        "cross-env": "^5.2.0",
+        "flag-icon-css": "^3.3.0",
+        "flatpickr": "^4.6.1",
+        "jquery": "^3.4.1",
+        "lodash": "^4.17.11",
+        "moment": "^2.24.0",
+        "promise": "^8.0.3",
+        "rtlcss": "^2.4.0",
+        "selectize": "^0.12.6",
+        "sweetalert": "^2.1.2",
+        "urijs": "^1.19.1",
+        "v-tooltip": "^2.0.2",
+        "vue": "^2.6.10",
+        "vue-breadcrumbs": "^1.2.0",
+        "vue-chartjs": "^3.4.2",
+        "vue-js-toggle-button": "^1.3.2",
+        "vue-rangedate-picker": "^1.0.0",
+        "vue-router": "^3.0.7",
+        "vue-switches": "^2.0.1",
+        "vue2-selectize": "^1.1.7",
+        "vuejs-paginate": "^2.1.0",
+        "vuex": "^3.1.1"
+    }
+}

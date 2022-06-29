@@ -1,0 +1,57 @@
+#modal-notifications {
+    .notifications__head {
+        padding: 1rem 22px;
+
+        .row {
+            margin-right: -5px;
+            margin-left: -5px;
+
+            .col-6 {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .btn {
+        font-size: 12px;
+        box-shadow: none;
+
+
+        &.active,
+        &:hover {
+            color: rgba(42, 129, 251, 0.85);
+            border-color: #8abbff;
+        }
+    }
+
+    .notification-container {
+    }
+
+    .notification {
+        padding: 1rem 22px;
+        border-color: #e1eaee;
+
+        &-content {
+            padding-left: 50px;
+        }
+
+        .spark-profile-photo {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+.notification-pill {
+
+    &::after {
+        display: none;
+    }
+
+    + .dropdown-menu {
+        width: 350px;
+        margin-top: 1.75rem;
+        margin-left: -140px;
+    }
+}

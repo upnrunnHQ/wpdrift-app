@@ -1,0 +1,86 @@
+.navbar-spark {
+    border: 1px solid #e1eaee;
+    box-shadow: 0 0 17px 0 rgba(30, 48, 86, 0.05);
+
+    .navbar-brand img {
+        border-radius: $border-radius;
+    }
+
+    .form-inline {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            right: 1rem;
+            content: "\f002";
+            font-family: Font Awesome\ 5 Free;
+            font-weight: 900;
+            color: $gray-200;
+            font-size: $font-size-sm;
+        }
+
+        .form-control {
+            width: 326px;
+            border-color: #e1eaee;
+            box-shadow: none;
+            font-size: 13.5px;
+            color: rgba(30, 48, 86, 0.5);
+        }
+
+        ::placeholder {
+            color: rgba(30, 48, 86, 0.5);
+        }
+
+        :-ms-input-placeholder {
+            color: rgba(30, 48, 86, 0.5);
+        }
+
+        ::-ms-input-placeholder {
+            color: rgba(30, 48, 86, 0.5);
+        }
+    }
+
+    .spark-nav-profile-photo {
+        width: 32.5px;
+        height: 32.5px;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        font-size: 13.5px;
+
+        &:hover {
+            font-weight: 500;
+        }
+    }
+
+    .notification-pill {
+        font-size: 13px;
+        font-weight: 500;
+        background-color: #f5f7fa;
+        color: rgba(42, 129, 251, 0.95) !important;
+
+        .far {
+            font-size: $font-size-base;
+            color: #1e3056 !important;
+        }
+    }
+
+    .dropdown-menu {
+        font-size: 13px;
+
+        .dropdown-header,
+        .dropdown-item {
+            font-weight: normal;
+        }
+
+        .dropdown-header {
+            color: $gray-400;
+        }
+    }
+
+    .dropdown-menu-right {
+        margin-top: 1.5rem;
+        right: .5rem;
+    }
+}

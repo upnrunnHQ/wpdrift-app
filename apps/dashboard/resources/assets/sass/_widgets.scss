@@ -1,0 +1,32 @@
+.widget {
+
+}
+
+.widget--primary {
+    border-top: 4px solid $gray-300;
+    border-color: theme-color('primary');
+}
+
+.widget--secondary {
+    border-top: 4px solid $gray-300;
+    border-color: theme-color('secondary');
+}
+
+.widget--success {
+    border-top: 4px solid $gray-300;
+    border-color: theme-color('success');
+}
+
+.widget--info {
+    border-top: 4px solid $gray-300;
+    border-color: theme-color('info');
+}
+
+.widget__stat {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.widget-users {
+    position: relative;
+}

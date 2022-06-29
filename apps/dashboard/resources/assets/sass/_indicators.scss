@@ -1,0 +1,31 @@
+.indicator-item {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid $gray-200;
+    display: flex;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    .indicator-item__icon,
+    .indicator-item__value {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+
+    .indicator-item__icon {
+        align-items: center;
+        font-size: 2rem;
+        color: $navbar-light-color;
+    }
+
+    .indicator-item__value {
+        text-align: right;
+    }
+
+    .indicator-item__counter {
+        display: block;
+        font-size: 1.5rem;
+    }
+}

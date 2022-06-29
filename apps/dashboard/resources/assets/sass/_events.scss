@@ -1,0 +1,134 @@
+.card-events {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+
+    .card-header {
+        border-bottom: 1px solid $gray-200;
+    }
+
+    .dropdown-toggle {
+        padding: 0.275rem 0.75rem;
+        font-size: 13.5px;
+    }
+
+    .card__title {
+        margin-bottom: 0;
+    }
+
+    .card-body {
+        position: relative;
+        padding-top: 0;
+        padding-bottom: 0;
+
+        .loader-overlay {
+            border-radius: $border-radius;
+        }
+
+        ul {
+            @extend .list-unstyled;
+
+            li {
+                @include clearfix;
+                margin-bottom: .5rem;
+                padding-left: 0;
+                padding-right: 0;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                background-color: $white;
+                font-size: $font-size-sm;
+                border-color: #e1eaee;
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+
+            .event-primary {
+            }
+
+            .event-success {
+            }
+        }
+
+        .avatar {
+            margin-right: 1rem;
+            width: 2.25rem;
+            height: 2.25rem;
+            line-height: 2.25rem;
+            color: $white;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+    }
+
+    .media {
+        align-items: center;
+    }
+
+    .media-body {
+        padding-right: 100px;
+        position: relative;
+    }
+
+    .display_name {}
+
+    .event-date {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -10px;
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        color: rgba(30, 48, 86, 0.55);
+    }
+
+    .display_name,
+    .event_text {
+        letter-spacing: 0.3px;
+        font-size: 13px;
+        color: #1e3056;
+    }
+
+    .display_name {
+        font-weight: 500;
+    }
+
+    .card-footer {
+        border-color: #e1eaee;
+
+        .btn {
+            padding: 0;
+            letter-spacing: 0.6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: rgba(30, 48, 86, 0.6);
+        }
+    }
+
+    .dropdown-menu {
+        font-size: 13px;
+        min-width: 100%;
+
+        &::after {
+            left: auto;
+            right: 7px;
+        }
+
+        &:before {
+            left: auto;
+            right: 8px;
+        }
+    }
+
+    .dropdown-item {
+        padding: .25rem 1rem;
+    }
+}

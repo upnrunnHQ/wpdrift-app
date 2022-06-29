@@ -1,0 +1,38 @@
+@import "variables";
+@import "./../../../vendor/laravel/spark-aurelius/resources/assets/sass/spark";
+@import "templates/variables";
+@import "fonts";
+@import "simple-line-icons";
+@import "~flag-icon-css/sass/flag-icon";
+@import "~selectize/dist/css/selectize";
+@import "components/navbar";
+@import "components/dropdown";
+@import "components/flatpickr";
+@import "components/notifications";
+@import "components/statistic";
+@import "layouts/main";
+@import "layouts/sidebar";
+@import "layouts/offcanvas";
+@import "dashboard";
+@import "customers";
+@import "items-list";
+@import "orders";
+@import "products";
+@import "customer";
+@import "loader";
+@import "stat";
+@import "card";
+@import "events";
+@import "widgets";
+@import "store";
+@import "indicators";
+@import "page-head";
+@import "logregpass";
+@import "tooltip";
+@import "templates/common";
+@import "pages/payments/item-status";
+@import "pages/payments/cart-details";
+
+.ant-notification {
+    z-index: 1031 !important;
+}

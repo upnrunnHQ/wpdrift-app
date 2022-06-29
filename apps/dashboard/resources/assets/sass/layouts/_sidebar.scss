@@ -1,0 +1,66 @@
+.sidebar-sticky {
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background-color: $white;
+    border-right: 1px solid #e1eaee;
+    box-shadow: 0 0 20px 0 rgba(30, 48, 86, 0.05);
+    z-index: 2;
+
+    .nav-item {
+        margin-bottom: 29px;
+        text-align: center;
+
+        > a {
+            @extend .nav-link;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $gray-100;
+            color: #2a81fb;
+        }
+
+        .router-link-exact-active {
+            background-color: #2a81fb;
+            color: $white;
+        }
+
+        .router-link-active {
+        }
+    }
+
+    .dropdown {
+        > a {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -6px;
+                font-family: Font Awesome\ 5 Free;
+                content: "\f077";
+                font-weight: 900;
+                font-size: $font-size-base * .75;
+            }
+
+            &.collapsed::before {
+                content: "\f078";
+            }
+        }
+    }
+
+    .sub-navs {
+        padding: 0 .5rem;
+        text-align: center;
+
+        a {
+            font-size: $font-size-sm;
+        }
+    }
+}

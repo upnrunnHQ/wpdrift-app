@@ -1,0 +1,25 @@
+#spark-app {
+}
+
+.spark-screen {
+    padding-top: 2rem;
+}
+
+.io-dashboard {
+    .main {
+        min-height: 10rem;
+        margin-left: 5.5rem;
+        padding: 1.5rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .page-bottom {
+        padding: 24px 2rem;
+        padding-left: 7rem;
+        border-top: 1px solid #e1eaee;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        color: rgba(30, 48, 86, 0.5);
+    }
+}

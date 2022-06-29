@@ -1,0 +1,16 @@
+.statistic {
+    &__title {
+        margin-bottom: .5rem;
+        font-size: $font-size-sm;
+        color: $text-muted;
+    }
+
+    &__content-prefix,
+    &__content-value {
+        display: inline-block;
+    }
+
+    &__content {
+        font-size: $font-size-lg;
+    }
+}

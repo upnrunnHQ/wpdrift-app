@@ -1,0 +1,141 @@
+.card {
+    border: 1px solid #e1eaee;
+    background-color: $white;
+    box-shadow: none;
+    border-radius: 6px;
+
+    &__top {
+        padding: 25px;
+        padding-bottom: 0;
+    }
+
+    &__title {
+        font-size: 17px;
+        color: #1e3056;
+        font-weight: 500;
+    }
+
+    &__lead {
+        margin-bottom: 51px;
+        font-size: 14px;
+        line-height: 1.57;
+        color: rgba(30, 48, 86, 0.75);
+        letter-spacing: 0.4px;
+    }
+
+    .card-header {
+        border-radius: 7px;
+        border-bottom: 1px solid #e1eaee;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .card-body {
+        position: relative;
+        padding: 25px;
+    }
+
+    &__tools {
+        margin-bottom: 2rem;
+        font-size: 12px;
+
+        .flatPickr-wrap {
+            display: inline-block;
+            position: relative;
+
+            &::before {
+                font-family: "icomoon";
+                content: "\e905";
+                position: absolute;
+                top: 6px;
+                left: .75rem;
+            }
+
+            .form-control {
+                padding-left: 2rem;
+                background-color: $white;
+                box-shadow: none;
+                border-color: #e1eaee;
+                color: rgba(30, 48, 86, 0.6);
+            }
+        }
+
+        .form-control,
+        .btn {
+            font-size: 12px;
+        }
+
+        .form-control {
+            height: auto;
+        }
+
+        .btn {
+            .icon {
+                vertical-align: middle;
+                line-height: initial;
+            }
+        }
+    }
+
+    .calendar-root {
+        display: inline-block;
+    }
+
+    .btn {
+        box-shadow: none;
+    }
+
+    .btn-default {
+        border-color: #e1eaee;
+    }
+
+    .btn-link {
+        border-color: transparent;
+    }
+
+    .ant-pagination {
+
+    }
+}
+
+.card-users {
+    .card__title {
+        margin-bottom: 0;
+    }
+}
+
+.card-tabs {
+    .card-body {
+        padding: 15px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+
+    .list-group {
+        a {
+            color: rgba(30, 48, 86, 0.9);
+        }
+    }
+
+    .nav-item {
+        margin-right: .5rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .nav-link {
+        border: 1px solid #e1eaee;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        color: rgba(30, 48, 86, 0.75);
+    }
+
+    .active {
+        border-color: #42a2dc;
+    }
+}

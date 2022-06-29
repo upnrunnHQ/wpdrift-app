@@ -1,0 +1,28 @@
+{
+    "name": "nwidart/edd",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\EDD\\Providers\\EDDServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\EDD\\": ""
+        },
+        "files": [
+            "Modules/EDD/Http/Helpers.php"
+        ]
+    }
+}
